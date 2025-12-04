@@ -1,0 +1,114 @@
+{
+    "lost_items": [
+        {
+            "id": 1,
+            "item_name": "Wallet",
+            "location_lost": "Library",
+            "description": "No description added"
+        },
+        {
+            "id": 2,
+            "item_name": "black umbrella",
+            "location_lost": "bus stop",
+            "description": "it has wooden handle"
+        },
+        {
+            "id": 3,
+            "item_name": "Water Bottle",
+            "location_lost": "Gym",
+            "description": "No description added"
+        },
+        {
+            "id": 4,
+            "item_name": "Notebook",
+            "location_lost": "classroon 202",
+            "description": "science notes"
+        },
+        {
+            "id": 5,
+            "item_name": "Hat",
+            "location_lost": "Cafeteria",
+            "description": "No description added"
+        },
+        {
+            "id": 6,
+            "item_name": "hat",
+            "location_lost": "ground",
+            "description": "No description added"
+        },
+        {
+            "id": 7,
+            "item_name": "watch",
+            "location_lost": "cafeteria",
+            "description": "No description added"
+        },
+        {
+            "id": 8,
+            "item_name": "keys",
+            "location_lost": "cafeteria",
+            "description": "No description added"
+        },
+        {
+            "id": 9,
+            "item_name": "phone",
+            "location_lost": "library",
+            "description": "No description added"
+        },
+        {
+            "id": 10,
+            "item_name": "bag",
+            "description": "black tourist bag",
+            "location_lost": "bus stop"
+        },
+        {
+            "id": 11,
+            "item_name": "phonecase",
+            "description": "black iphone 16 case",
+            "location_lost": "classroom"
+        }
+    ],
+    "found_items": [
+        {
+            "id": 1,
+            "item_name": "Backpack",
+            "location_found": "Classroom 101",
+            "description": "No description added",
+            "email": "sree@gmail.com"
+        },
+        {
+            "id": 2,
+            "item_name": "Sunglasses",
+            "location_found": "Cafeteria",
+            "description": "No description added",
+            "email": "ashit@gmail.com"
+        },
+        {
+            "id": 4,
+            "item_name": "notebook",
+            "location_found": "class",
+            "description": "No description added",
+            "email": "sath@gmail.com"
+        },
+        {
+            "id": 7,
+            "item_name": "bag",
+            "location_found": "bus stop",
+            "description": "No description added",
+            "email": "mike@gmail.com"
+        },
+        {
+            "id": 8,
+            "item_name": "waterbottle",
+            "description": "milton 1l bottle",
+            "location_found": "library",
+            "email": "arav@gmail.com"
+        },
+        {
+            "id": 9,
+            "item_name": "sticker packet",
+            "description": "pack of 10 BTS stickers",
+            "location_found": "ground",
+            "email": "su7@gmail.com"
+        }
+    ]
+}

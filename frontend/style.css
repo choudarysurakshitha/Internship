@@ -1,0 +1,156 @@
+/* ====== GENERAL ====== */
+body {
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f6f8;
+    color: #333;
+}
+
+.container {
+    display: flex;
+    min-height: 100vh;
+}
+
+/* ====== SIDEBAR ====== */
+.sidebar {
+    width: 220px;
+    background-color: #2c3e50;
+    color: #fff;
+    padding: 20px;
+}
+
+.sidebar h2 {
+    margin-top: 0;
+    font-size: 24px;
+    text-align: center;
+}
+
+.sidebar ul {
+    list-style: none;
+    padding: 0;
+    margin-top: 20px;
+}
+
+.sidebar ul li {
+    padding: 12px 10px;
+    cursor: pointer;
+    border-radius: 4px;
+    margin-bottom: 5px;
+    transition: background 0.3s;
+}
+
+.sidebar ul li.active,
+.sidebar ul li:hover {
+    background-color: #34495e;
+}
+
+/* ====== MAIN CONTENT ====== */
+.main {
+    flex: 1;
+    padding: 20px 30px;
+}
+
+/* ====== SECTIONS ====== */
+.section {
+    display: none;
+}
+
+.section.active {
+    display: block;
+}
+
+/* ====== FORMS ====== */
+.form-card {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    margin-bottom: 25px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.form-card input {
+    width: calc(100% - 20px);
+    padding: 8px 10px;
+    margin-bottom: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.form-card button {
+    padding: 10px 16px;
+    border: none;
+    background-color: #2c3e50;
+    color: #fff;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.form-card button:hover {
+    background-color: #34495e;
+}
+
+/* ====== ITEM CARDS ====== */
+.cards {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.item-card {
+    background-color: #fff;
+    padding: 15px;
+    border-radius: 8px;
+    width: 220px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    transition: transform 0.2s;
+}
+
+.item-card:hover {
+    transform: translateY(-3px);
+}
+
+.item-card h3, .item-card h4 {
+    margin: 0 0 6px 0;
+    font-size: 18px;
+}
+
+.item-card p {
+    margin: 4px 0;
+    font-size: 14px;
+    color: #555;
+}
+
+/* ====== RESPONSIVE ====== */
+@media(max-width: 900px) {
+    .container {
+        flex-direction: column;
+    }
+    
+    .sidebar {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+
+    .sidebar ul {
+        display: flex;
+        gap: 15px;
+    }
+
+    .sidebar ul li {
+        margin-bottom: 0;
+    }
+
+    .item-card {
+        width: calc(50% - 15px);
+    }
+}
+
+@media(max-width: 500px) {
+    .item-card {
+        width: 100%;
+    }
+}
+
+

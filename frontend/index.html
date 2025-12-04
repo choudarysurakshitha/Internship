@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Lost & Found Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+
+    <!-- Sidebar -->
+    <aside class="sidebar">
+        <h2>Dashboard</h2>
+        <ul>
+            <li class="active" onclick="showSection('lost-section')">Lost Items</li>
+            <li onclick="showSection('found-section')">Found Items</li>
+        </ul>
+    </aside>
+
+    <!-- Main Content -->
+    <main class="main">
+
+        <!-- LOST ITEMS SECTION -->
+        <section id="lost-section" class="section active">
+            <h2>Lost Items</h2>
+
+            <div class="form-card">
+                <h3>Add Lost Item</h3>
+                <input id="lost-name" type="text" placeholder="Item Name">
+                <input id="lost-location" type="text" placeholder="Location Lost">
+                <input id="lost-description" type="text" placeholder="Description (optional)">
+                <button onclick="addLost()">Add Lost Item</button>
+            </div>
+
+            <h3>All Lost Items</h3>
+            <div id="lost-list" class="cards"></div>
+
+            <h3>Latest Lost Items</h3>
+            <div id="latest-lost" class="cards"></div>
+        </section>
+
+        <!-- FOUND ITEMS SECTION -->
+        <section id="found-section" class="section">
+            <h2>Found Items</h2>
+
+            <div class="form-card">
+                <h3>Add Found Item</h3>
+                <input id="found-name" type="text" placeholder="Item Name">
+                <input id="found-location" type="text" placeholder="Where Found">
+                <input id="found-description" type="text" placeholder="Description (optional)">
+                <input id="found-email" type="email" placeholder="Your Email (so owner can contact)">
+                <button onclick="addFound()">Add Found Item</button>
+            </div>
+
+            <h3>All Found Items</h3>
+            <div id="found-list" class="cards"></div>
+
+            <h3>Latest Found Items</h3>
+            <div id="latest-found" class="cards"></div>
+        </section>
+
+    </main>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
